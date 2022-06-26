@@ -6,3 +6,7 @@
 mat-toolbar > span {
   margin: 10px;
 }
+
+app-main-screen {
+  height: 100%;
+}

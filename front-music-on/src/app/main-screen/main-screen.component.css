@@ -1,6 +1,24 @@
 app-player-bar {
-  position: absolute;
+  position: sticky;
   bottom: 0;
   z-index: 1000;
   width: 100%;
+}
+
+.content-container {
+  width: 100%;
+}
+
+.drawer {
+  width: 15%;
+}
+
+.main-content-area {
+  height: 100%;
+  padding: 10px;
+}
+
+
+.bottom-spacer {
+  height: 100vh;
 }

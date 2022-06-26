@@ -1,7 +1,6 @@
 mat-toolbar {
   height: 100px;
   display: flex;
-  position: relative;
   justify-content: center;
 }
 
