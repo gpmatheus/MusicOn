@@ -6,6 +6,7 @@ app-player-bar {
 }
 
 .content-container {
+  height: 82vh;
   width: 100%;
 }
 
@@ -16,9 +17,4 @@ app-player-bar {
 .main-content-area {
   height: 100%;
   padding: 10px;
-}
-
-
-.bottom-spacer {
-  height: 100vh;
 }

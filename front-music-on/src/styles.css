@@ -14,3 +14,25 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-slider-track-fill {
 	background-color: #AAAAAA !important;
 }
+
+::-webkit-scrollbar-thumb
+{
+  background: grey !important;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: lightgray !important;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: rgb(230, 230, 230) !important;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+::-webkit-scrollbar-track {
+    background-color: rgb(70, 70, 70) !important;
+  }
