@@ -1,0 +1,84 @@
+mat-toolbar {
+  height: 100px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+mat-icon {
+  border: 1px solid red;
+  margin: 0px 10px;
+}
+
+.controllers-and-feedback-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.feedback-div > p {
+  padding-top: 14px;
+
+  font-size: 12px;
+  font-weight: 500;
+  color: gray;
+}
+
+.controllers-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.song-description-container {
+  position: absolute;
+  left: 20px;
+  display: flex;
+}
+
+#song-photo {
+  height: 50px;
+}
+
+#song-name {
+  font-size: 13px;
+  font-weight: 400;
+  color: lightgrey;
+  margin: 5px 10px;
+}
+
+#artist {
+  font-size: 13px;
+  font-weight: 400;
+  color: grey;
+  margin: 5px 10px;
+}
+
+.song-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.volume-area {
+  position: absolute;
+  right: 20px;
+}
+
+#song-slider {
+  /* border: 1px solid red; */
+
+  width: 100%;
+  padding: 10px;
+  margin: 0px 10px;
+}
