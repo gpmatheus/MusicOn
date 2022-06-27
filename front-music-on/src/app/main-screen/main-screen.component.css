@@ -18,3 +18,7 @@ app-player-bar {
   height: 100%;
   padding: 10px;
 }
+
+.spacer {
+  height: 50px;
+}

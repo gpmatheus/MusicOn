@@ -16,12 +16,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainScreenComponent } from './main-screen/main-screen.component';
 import { PlayerBarComponent } from './main-screen/player-bar/player-bar.component';
+import { NavigationButtonComponent } from './main-screen/navigation-button/navigation-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainScreenComponent,
-    PlayerBarComponent
+    PlayerBarComponent,
+    NavigationButtonComponent
   ],
   imports: [
     BrowserModule,
