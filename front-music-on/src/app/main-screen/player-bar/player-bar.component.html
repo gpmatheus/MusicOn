@@ -1,9 +1,11 @@
 <mat-toolbar>
   <div class="song-description-container">
-    <mat-card id="song-photo">Foto</mat-card>
+    <mat-card id="song-photo">
+      <img mat-card-image [src]="imageSrc">
+    </mat-card>
     <div class="song-description">
-      <p id="song-name">Nome da música</p>
-      <p id="artist">Nome do artista</p>
+      <p id="song-name">{{ songName }}</p>
+      <p id="artist">{{ artist }}</p>
     </div>
   </div>
   <div class="controllers-and-feedback-div">

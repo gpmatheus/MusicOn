@@ -9,6 +9,10 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class PlayerBarComponent implements OnInit {
 
+  imageSrc: string = '../assets/rebirth.jfif';
+  songName: string = 'Rebirth';
+  artist: string = 'Angra';
+
   constructor() {
   }
 

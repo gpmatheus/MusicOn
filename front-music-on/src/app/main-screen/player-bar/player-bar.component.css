@@ -44,7 +44,8 @@ mat-icon {
 }
 
 #song-photo {
-  height: 50px;
+  width: 70px;
+  height: 70px;
 }
 
 #song-name {
