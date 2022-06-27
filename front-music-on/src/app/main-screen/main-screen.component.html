@@ -7,6 +7,7 @@
         <mat-divider></mat-divider>
         <app-navigation-button icon="library_add" textContent='Create new playlist'></app-navigation-button>
         <div class="spacer"></div>
+        <app-navigation-button *ngFor="let playlist of playlists" [textContent]="playlist.name"></app-navigation-button>
       </mat-nav-list>
     </mat-drawer>
     <div class="main-content">

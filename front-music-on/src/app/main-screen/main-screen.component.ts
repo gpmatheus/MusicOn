@@ -9,6 +9,11 @@ export class MainScreenComponent implements OnInit {
 
   openedNav: boolean = true;
 
+  playlists = [
+    {name: 'My first playlist'},
+    {name: 'My second playlist'}
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
