@@ -14,9 +14,9 @@ app-player-bar {
   width: 15%;
 }
 
-.main-content-area {
-  height: 100%;
-  padding: 10px;
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .spacer {
