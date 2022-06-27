@@ -14,3 +14,7 @@ mat-toolbar {
 app-main-screen {
   height: 100%;
 }
+
+mat-icon:hover {
+  cursor: pointer;
+}

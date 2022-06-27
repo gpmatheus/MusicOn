@@ -1,8 +1,8 @@
 <div class="full-body mat-app-background">
   <mat-toolbar color="primary">
-    <mat-icon>menu</mat-icon>
+    <mat-icon (click)="main.openedNav=!main.openedNav">menu</mat-icon>
     <span>MusicOn</span>
   </mat-toolbar>
-  <app-main-screen></app-main-screen>
+  <app-main-screen #main ></app-main-screen>
   <!-- <router-outlet></router-outlet> -->
 </div>

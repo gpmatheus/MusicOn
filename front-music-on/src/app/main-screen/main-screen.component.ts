@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-main-screen',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-screen.component.css']
 })
 export class MainScreenComponent implements OnInit {
+
+  openedNav: boolean = true;
 
   constructor() { }
 
