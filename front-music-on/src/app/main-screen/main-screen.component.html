@@ -1,7 +1,7 @@
   <mat-drawer-container class="content-container" autosize>
     <mat-drawer #drawer class="drawer" [opened]="openedNav" mode="side">
       <mat-nav-list>
-        <app-navigation-button icon="home" textContent='home'></app-navigation-button>
+        <app-navigation-button icon="home" textContent='Home'></app-navigation-button>
         <app-navigation-button icon="search" textContent='Search'></app-navigation-button>
         <app-navigation-button icon="library_music" textContent='Your Library'></app-navigation-button>
         <mat-divider></mat-divider>
@@ -9,8 +9,8 @@
         <div class="spacer"></div>
       </mat-nav-list>
     </mat-drawer>
-    <!-- <div class="main-content-area">
-      <button mat-raised-button (click)="drawer.open()">Abrir</button>
-    </div> -->
+    <div class="main-content">
+      <app-playable-display></app-playable-display>
+    </div>
   </mat-drawer-container>
 <app-player-bar></app-player-bar>

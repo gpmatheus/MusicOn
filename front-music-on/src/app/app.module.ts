@@ -17,13 +17,15 @@ import { AppComponent } from './app.component';
 import { MainScreenComponent } from './main-screen/main-screen.component';
 import { PlayerBarComponent } from './main-screen/player-bar/player-bar.component';
 import { NavigationButtonComponent } from './main-screen/navigation-button/navigation-button.component';
+import { PlayableDisplayComponent } from './main-screen/playable-display/playable-display.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainScreenComponent,
     PlayerBarComponent,
-    NavigationButtonComponent
+    NavigationButtonComponent,
+    PlayableDisplayComponent
   ],
   imports: [
     BrowserModule,
