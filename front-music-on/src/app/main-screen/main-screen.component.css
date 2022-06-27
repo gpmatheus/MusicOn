@@ -17,6 +17,7 @@ app-player-bar {
 .main-content {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .spacer {
