@@ -17,16 +17,9 @@ export class NavigationButtonComponent implements OnInit {
   @Input()
   path: string = '';
 
-  router: Router;
-  constructor(private r: Router) {
-    this.router = r;
-  }
+  constructor() { }
 
   ngOnInit(): void {
-  }
-
-  redirectTo(path: string): void {
-    this.router.navigate([path]);
   }
 
 }

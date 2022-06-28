@@ -1,5 +1,5 @@
 <div class="button-div">
-  <button mat-button (click)="redirectTo(path)">
+  <button mat-button [routerLink]="path">
     <mat-icon *ngIf="icon !== ''" aria-hidden="false">{{ icon }}</mat-icon> {{ textContent }}
   </button>
 </div>
