@@ -4,8 +4,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {path: '', component: MainScreenComponent, loadChildren: () => import('../home-m/home-m.module').then(m => m.HomeMModule)},
-  {path: 'search', component: MainScreenComponent, loadChildren: () => import('../search-m/search-m.module').then(m => m.SearchMModule)}
+  {path: '', loadChildren: () => import('../home-m/home-m.module').then(m => m.HomeMModule)},
+  {path: 'search', loadChildren: () => import('../search-m/search-m.module').then(m => m.SearchMModule)}
 ];
 
 @NgModule({
