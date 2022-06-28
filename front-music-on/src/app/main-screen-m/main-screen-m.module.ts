@@ -10,9 +10,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { MainScreenMRoutingModule } from './main-screen-m-routing.module';
 import { MainScreenComponent } from './main-screen/main-screen.component';
-import { NavigationButtonComponent } from './main-screen/navigation-button/navigation-button.component';
-import { PlayableDisplayComponent } from './main-screen/playable-display/playable-display.component';
-import { PlayerBarComponent } from './main-screen/player-bar/player-bar.component';
+import { NavigationButtonComponent } from '../main-screen-m/navigation-button/navigation-button.component';
+import { PlayableDisplayComponent } from '../main-screen-m/playable-display/playable-display.component';
+import { PlayerBarComponent } from '../main-screen-m/player-bar/player-bar.component';
 
 
 @NgModule({
@@ -34,7 +34,8 @@ import { PlayerBarComponent } from './main-screen/player-bar/player-bar.componen
     MatButtonModule
   ],
   exports: [
-    MainScreenComponent
+    MainScreenComponent,
+    PlayableDisplayComponent
   ]
 })
 export class MainScreenMModule { }
