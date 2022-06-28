@@ -14,12 +14,6 @@ app-player-bar {
   width: 280px;
 }
 
-.main-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .spacer {
   height: 10px;
 }
