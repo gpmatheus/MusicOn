@@ -11,7 +11,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MainScreenMRoutingModule } from './main-screen-m-routing.module';
 import { MainScreenComponent } from './main-screen/main-screen.component';
 import { NavigationButtonComponent } from '../main-screen-m/navigation-button/navigation-button.component';
-import { PlayableDisplayComponent } from '../main-screen-m/playable-display/playable-display.component';
 import { PlayerBarComponent } from '../main-screen-m/player-bar/player-bar.component';
 
 
@@ -20,7 +19,6 @@ import { PlayerBarComponent } from '../main-screen-m/player-bar/player-bar.compo
     MainScreenComponent,
     PlayerBarComponent,
     NavigationButtonComponent,
-    PlayableDisplayComponent,
   ],
   imports: [
     CommonModule,
@@ -34,8 +32,7 @@ import { PlayerBarComponent } from '../main-screen-m/player-bar/player-bar.compo
     MatButtonModule
   ],
   exports: [
-    MainScreenComponent,
-    PlayableDisplayComponent
+    MainScreenComponent
   ]
 })
 export class MainScreenMModule { }

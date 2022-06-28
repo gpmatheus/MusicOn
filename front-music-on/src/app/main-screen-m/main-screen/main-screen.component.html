@@ -10,6 +10,9 @@
         <app-navigation-button *ngFor="let playlist of playlists" [textContent]="playlist.name"></app-navigation-button>
       </mat-nav-list>
     </mat-drawer>
+    <div>
+      <mat-icon>menu</mat-icon>
+    </div>
     <router-outlet></router-outlet>
   </mat-drawer-container>
 <app-player-bar></app-player-bar>

@@ -1,19 +1,25 @@
+import { PlayableDisplayComponent } from '../home-m/playable-display/playable-display.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { HomeMRoutingModule } from './home-m-routing.module';
 import { HomeComponent } from './home/home.component';
-import { MainScreenMModule } from '../main-screen-m/main-screen-m.module';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    PlayableDisplayComponent
   ],
   imports: [
     CommonModule,
     HomeMRoutingModule,
-    MainScreenMModule
+    MatCardModule,
+    MatIconModule,
+    MatButtonModule
   ]
 })
 export class HomeMModule { }
