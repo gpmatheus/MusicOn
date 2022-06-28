@@ -1,3 +1,5 @@
 <div class="button-div">
-  <button mat-button> <mat-icon aria-hidden="false">{{ icon }}</mat-icon> {{ textContent }}</button>
+  <button mat-button (click)="redirectTo(path)">
+    <mat-icon *ngIf="icon !== ''" aria-hidden="false">{{ icon }}</mat-icon> {{ textContent }}
+  </button>
 </div>

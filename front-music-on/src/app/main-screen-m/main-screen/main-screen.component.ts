@@ -15,15 +15,8 @@ export class MainScreenComponent implements OnInit {
     {name: 'My second playlist'}
   ]
 
-  router: Router
-  constructor(private r: Router) {
-    this.router = r;
-  }
+  constructor() { }
 
   ngOnInit(): void {
-  }
-
-  redirectTo(path: string): void {
-    this.router.navigate([path]);
   }
 }

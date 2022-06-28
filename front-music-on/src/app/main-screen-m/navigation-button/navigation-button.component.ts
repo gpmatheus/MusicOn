@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navigation-button',
@@ -12,9 +13,20 @@ export class NavigationButtonComponent implements OnInit {
 
   @Input()
   textContent: string = '';
-  constructor() { }
+
+  @Input()
+  path: string = '';
+
+  router: Router;
+  constructor(private r: Router) {
+    this.router = r;
+  }
 
   ngOnInit(): void {
+  }
+
+  redirectTo(path: string): void {
+    this.router.navigate([path]);
   }
 
 }

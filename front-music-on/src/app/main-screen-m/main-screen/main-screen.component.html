@@ -1,11 +1,11 @@
   <mat-drawer-container class="content-container" autosize>
     <mat-drawer #drawer class="drawer" [opened]="openedNav" mode="side">
       <mat-nav-list>
-        <app-navigation-button icon="home" textContent='Home'></app-navigation-button>
-        <app-navigation-button icon="search" textContent='Search'></app-navigation-button>
-        <app-navigation-button icon="library_music" textContent='Your Library'></app-navigation-button>
+        <app-navigation-button icon="home" path="" textContent='Home'></app-navigation-button>
+        <app-navigation-button icon="search" path="/search" textContent='Search'></app-navigation-button>
+        <app-navigation-button icon="library_music" path="" textContent='Your Library'></app-navigation-button>
         <mat-divider></mat-divider>
-        <app-navigation-button icon="library_add" textContent='Create new playlist'></app-navigation-button>
+        <app-navigation-button icon="library_add" path="" textContent='Create new playlist'></app-navigation-button>
         <div class="spacer"></div>
         <app-navigation-button *ngFor="let playlist of playlists" [textContent]="playlist.name"></app-navigation-button>
       </mat-nav-list>
