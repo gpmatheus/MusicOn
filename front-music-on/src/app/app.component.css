@@ -10,11 +10,3 @@ mat-toolbar > span {
 mat-toolbar {
   height: 6vh;
 }
-
-app-main-screen {
-  height: 100%;
-}
-
-mat-icon:hover {
-  cursor: pointer;
-}

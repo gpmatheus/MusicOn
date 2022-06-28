@@ -21,3 +21,7 @@ app-player-bar {
 .menu-button-div {
   margin: 5px;
 }
+
+mat-icon:hover {
+  cursor: pointer;
+}
