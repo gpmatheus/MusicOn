@@ -2,7 +2,7 @@ mat-card {
   height: 250px;
   width: 190px;
   border-radius: 10px;
-  margin: 20px;
+  margin: 10px 20px;
 }
 
 img {

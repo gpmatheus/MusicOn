@@ -17,3 +17,7 @@ app-player-bar {
 .spacer {
   height: 10px;
 }
+
+.menu-button-div {
+  margin: 5px;
+}
