@@ -1,4 +1,5 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-screen',
@@ -14,9 +15,15 @@ export class MainScreenComponent implements OnInit {
     {name: 'My second playlist'}
   ]
 
-  constructor() { }
+  router: Router
+  constructor(private r: Router) {
+    this.router = r;
+  }
 
   ngOnInit(): void {
   }
 
+  redirectTo(path: string): void {
+    this.router.navigate([path]);
+  }
 }
