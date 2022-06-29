@@ -7,12 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlayableDisplayComponent implements OnInit {
 
-  playable: string;
-  artist: string;
+  playable: string = 'Rebirth';
+  artist: string = 'Angra';
+  image: string = '../assets/rebirth.jfif';
 
   constructor() {
-    this.playable = 'Rebirth';
-    this.artist = 'Angra'
   }
 
   ngOnInit(): void {
