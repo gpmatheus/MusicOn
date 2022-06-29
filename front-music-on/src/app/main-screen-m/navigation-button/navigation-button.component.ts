@@ -15,11 +15,12 @@ export class NavigationButtonComponent implements OnInit {
   textContent: string = '';
 
   @Input()
-  path: string = '';
+  path: string | [string, string] = '';
 
   constructor() { }
 
   ngOnInit(): void {
+    // console.log(this.path);
   }
 
 }

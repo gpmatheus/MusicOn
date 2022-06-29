@@ -1,0 +1,10 @@
+<mat-toolbar class="playlist-name-div">
+  <p>{{ playlist.name }}</p>
+</mat-toolbar>
+<div *ngFor="let song of playlist.songs" class="songs-div">
+  <div class="song">
+    <button mat-button class="song-name-div"><mat-icon>play_arrow</mat-icon> {{ song.name }} </button>
+    <div class="spacer"></div>
+    <span class="song-duration">{{ song.duration }}</span>
+  </div>
+</div>

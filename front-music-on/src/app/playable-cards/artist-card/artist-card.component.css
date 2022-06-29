@@ -1,0 +1,46 @@
+mat-card {
+  height: 250px;
+  width: 190px;
+  border-radius: 10px;
+  margin: 10px 20px;
+}
+
+img {
+  height: 220px;
+  opacity: .5;
+}
+
+.outer-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+mat-card-content {
+  margin-top: -15px;
+}
+
+.button-div {
+  position:relative;
+  top: -40px;
+}
+
+.information-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 18px;
+}
+
+.information {
+  padding: 5px;
+  margin: 0px;
+}

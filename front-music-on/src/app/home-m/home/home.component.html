@@ -1,26 +1,29 @@
-<div class="main-content">
-  <app-playable-display></app-playable-display>
-  <app-playable-display></app-playable-display>
-  <app-playable-display></app-playable-display>
-  <app-playable-display></app-playable-display>
-  <app-playable-display></app-playable-display>
-  <app-playable-display></app-playable-display>
-  <app-playable-display></app-playable-display>
-  <app-playable-display></app-playable-display>
-  <app-playable-display></app-playable-display>
-  <app-playable-display></app-playable-display>
-  <app-playable-display></app-playable-display>
-  <app-playable-display></app-playable-display>
-  <app-playable-display></app-playable-display>
-  <app-playable-display></app-playable-display>
-  <app-playable-display></app-playable-display>
-  <app-playable-display></app-playable-display>
-  <app-playable-display></app-playable-display>
-  <app-playable-display></app-playable-display>
-  <app-playable-display></app-playable-display>
-  <app-playable-display></app-playable-display>
-  <app-playable-display></app-playable-display>
-  <app-playable-display></app-playable-display>
-  <app-playable-display></app-playable-display>
-  <app-playable-display></app-playable-display>
+<!-- essa parte ... -->
+<mat-divider></mat-divider>
+<div class="divider-text">
+  <p>Albums</p>
 </div>
+<div class="main-content">
+  <app-album-card *ngFor="let album of albuns" [name]="album.name" [artist]="album.artist" [photo]="album.photo"></app-album-card>
+</div>
+<!-- pode ser transformada em um componente -->
+
+<!-- essa parte ... -->
+<mat-divider></mat-divider>
+<div class="divider-text">
+  <p>Playlists</p>
+</div>
+<div class="main-content">
+  <app-playlist-card *ngFor="let playlist of playlists" [name]="playlist.name" [public]="playlist.public"></app-playlist-card>
+</div>
+<!-- pode ser transformada em um componente -->
+
+<!-- essa parte ... -->
+<mat-divider></mat-divider>
+<div class="divider-text">
+  <p>Artists</p>
+</div>
+<div class="main-content">
+  <app-artist-card *ngFor="let artist of artists" [name]="artist.name" [photo]="artist.photo"></app-artist-card>
+</div>
+<!-- pode ser transformada em um componente -->

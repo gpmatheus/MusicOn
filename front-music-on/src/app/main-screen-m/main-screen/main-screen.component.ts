@@ -1,5 +1,6 @@
+import { PlayableProviderService } from './../services/temp/playable-provider.service';
 import { Component, Input, OnInit, Output } from '@angular/core';
-import { Router } from '@angular/router';
+import { Playlist } from '../services/temp/playable-provider.service';
 
 @Component({
   selector: 'app-main-screen',
@@ -8,12 +9,11 @@ import { Router } from '@angular/router';
 })
 export class MainScreenComponent implements OnInit {
 
-  playlists = [
-    {name: 'My first playlist'},
-    {name: 'My second playlist'}
-  ]
+  playlists: Playlist[] = []
 
-  constructor() { }
+  constructor(playableProviderService: PlayableProviderService) {
+    this.playlists = playableProviderService.getPlaylists();
+  }
 
   ngOnInit(): void {
   }

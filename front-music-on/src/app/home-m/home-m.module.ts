@@ -1,4 +1,3 @@
-import { PlayableDisplayComponent } from '../home-m/playable-display/playable-display.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -7,19 +6,21 @@ import { HomeComponent } from './home/home.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-
+import { MatDividerModule } from '@angular/material/divider';
+import { PlayableCardsModule } from '../playable-cards/playable-cards.module';
 
 @NgModule({
   declarations: [
-    HomeComponent,
-    PlayableDisplayComponent
+    HomeComponent
   ],
   imports: [
     CommonModule,
     HomeMRoutingModule,
     MatCardModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    PlayableCardsModule,
+    MatDividerModule
   ]
 })
 export class HomeMModule { }

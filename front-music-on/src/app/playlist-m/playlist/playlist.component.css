@@ -1,0 +1,30 @@
+.playlist-name-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.playlist-name-div > p {
+  font-size: 25px;
+  margin: 10px 30px;
+}
+
+.song {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.song-duration {
+  color: lightgrey;
+}
+
+.songs-div {
+  margin: 40px;
+}

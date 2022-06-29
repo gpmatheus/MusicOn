@@ -3,3 +3,13 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.divider-text {
+  display: flex;
+}
+
+.divider-text > p{
+  font-size: 20px;
+  margin: 10px;
+  margin-left: 60px;
+}

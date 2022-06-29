@@ -1,5 +1,17 @@
 <mat-tab-group color="accent" mat-align-tabs="center">
-  <mat-tab label="Playlists"> Content 1 </mat-tab>
-  <mat-tab label="Albums"> Content 2 </mat-tab>
-  <mat-tab label="Artistas"> Content 3 </mat-tab>
+  <mat-tab label="Playlists">
+    <div class="main-content">
+      <app-playlist-card *ngFor="let playlist of playlists" [name]="playlist.name" [public]="playlist.public"></app-playlist-card>
+    </div>
+  </mat-tab>
+  <mat-tab label="Albums">
+    <div class="main-content">
+      <app-album-card *ngFor="let album of albuns" [name]="album.name" [artist]="album.artist" [photo]="album.photo"></app-album-card>
+    </div>
+  </mat-tab>
+  <mat-tab label="Artistas">
+    <div class="main-content">
+      <app-artist-card *ngFor="let artist of artists" [name]="artist.name" [photo]="artist.photo"></app-artist-card>
+    </div>
+  </mat-tab>
 </mat-tab-group>
