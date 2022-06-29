@@ -10,6 +10,8 @@
         <app-navigation-button *ngFor="let playlist of playlists" [textContent]="playlist.name"></app-navigation-button>
       </mat-nav-list>
     </mat-drawer>
+
+    <!-- botão provisório para abrir a aba do lado -->
     <div class="menu-button-div">
       <mat-icon (click)="drawer.toggle()">menu</mat-icon>
     </div>
