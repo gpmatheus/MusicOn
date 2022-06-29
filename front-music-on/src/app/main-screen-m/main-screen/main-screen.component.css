@@ -6,8 +6,12 @@ app-player-bar {
 }
 
 .content-container {
-  height: 82vh;
+  height: 78vh;
   width: 100%;
+}
+
+.menu-button {
+  height: 4vh;
 }
 
 .drawer {
