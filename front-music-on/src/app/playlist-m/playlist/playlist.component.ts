@@ -14,11 +14,16 @@ export class PlaylistComponent implements OnInit {
   playlist: Playlist;
 
   constructor(private playableProviderService: PlayableProviderService, private route: ActivatedRoute) {
+
     this.playlistId = this.route.snapshot.paramMap.get('id');
     this.playlist = this.playableProviderService.getPlaylistById(this.playlistId);
   }
 
   ngOnInit(): void {
+    this.route.paramMap.subscribe(paramMap => {
+      this.playlistId = paramMap.get('id');
+      this.playlist = this.playableProviderService.getPlaylistById(this.playlistId);
+    })
   }
 
 }
