@@ -1,4 +1,4 @@
-import { Album, Artist, PlayableProviderService, Playlist } from './../../main-screen-m/services/temp/playable-provider.service';
+import { Album, Artist, PlayableProviderService, Playlist } from 'src/app/services/temp/playable-provider.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

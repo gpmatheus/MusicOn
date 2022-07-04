@@ -1,6 +1,6 @@
-import { PlayableProviderService } from './../services/temp/playable-provider.service';
+import { PlayableProviderService } from 'src/app/services/temp/playable-provider.service';
 import { Component, Input, OnInit, Output } from '@angular/core';
-import { Playlist } from '../services/temp/playable-provider.service';
+import { Playlist } from 'src/app/services/temp/playable-provider.service';
 
 @Component({
   selector: 'app-main-screen',

@@ -1,4 +1,4 @@
-import { Playlist, PlayableProviderService } from 'src/app/main-screen-m/services/temp/playable-provider.service';
+import { Playlist, PlayableProviderService } from 'src/app/services/temp/playable-provider.service';
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
