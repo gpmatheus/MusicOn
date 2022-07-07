@@ -8,7 +8,7 @@
       <app-navigation-button icon="search" path="/search" textContent='Search'></app-navigation-button>
       <app-navigation-button icon="library_music" path="/library" textContent='Your Library'></app-navigation-button>
       <mat-divider></mat-divider>
-      <app-navigation-button icon="library_add" path="" textContent='Create new playlist'></app-navigation-button>
+      <app-navigation-button icon="library_add" path="/add-playlist" textContent='Create new playlist'></app-navigation-button>
       <div class="spacer"></div>
       <app-navigation-button *ngFor="let playlist of playlists" [path]="['/playlist', playlist.id]" [textContent]="playlist.name"></app-navigation-button>
     </mat-nav-list>

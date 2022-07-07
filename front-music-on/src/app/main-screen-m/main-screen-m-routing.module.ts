@@ -8,7 +8,8 @@ const routes: Routes = [
   {path: '', loadChildren: () => import('../home-m/home-m.module').then(m => m.HomeMModule)},
   {path: 'search', loadChildren: () => import('../search-m/search-m.module').then(m => m.SearchMModule)},
   {path: 'library', loadChildren: () => import('../library-m/library-m.module').then(m => m.LibraryMModule)},
-  {path: 'playlist', loadChildren: () => import('../playlist-m/playlist-m.module').then(m => m.PlaylistMModule)}
+  {path: 'playlist', loadChildren: () => import('../playlist-m/playlist-m.module').then(m => m.PlaylistMModule)},
+  {path: 'add-playlist', loadChildren: () => import('../forms/add-playlist-form/add-playlist-form.module').then(m => m.AddPlaylistFormModule)}
 ];
 
 @NgModule({
