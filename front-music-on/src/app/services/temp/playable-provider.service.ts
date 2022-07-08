@@ -63,10 +63,6 @@ export class PlayableProviderService {
 
   getPlaylistById(id: string | null): Playlist {
     for (let playlist of this.getPlaylists()) {
-      // somente para teste
-      console.log('id da playlist' + playlist.id);
-      console.log('id procurado' + id);
-
       if (playlist.id === id) {
         return playlist;
       }
