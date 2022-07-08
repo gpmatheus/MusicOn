@@ -1,6 +1,9 @@
 <div class="full-body mat-app-background">
   <mat-toolbar color="primary">
+    <button mat-button (click)="toggleDrawer()" [disabled]="!menuButtonEnabled">
+      <mat-icon>menu</mat-icon>
+    </button>
     <span>MusicOn</span>
   </mat-toolbar>
-  <router-outlet></router-outlet>
+  <router-outlet (activate)="onActivate($event)"></router-outlet>
 </div>
