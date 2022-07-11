@@ -1,0 +1,20 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  min-height: 94vh;
+}
+
+.login-div {
+  background-color: black;
+}
+
+.placement-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 94vh;
+}
+
+.form {
+
+}
