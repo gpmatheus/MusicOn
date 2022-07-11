@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-add-playlist',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddPlaylistComponent implements OnInit {
 
+  playlistForm = new FormGroup({
+    name: new FormControl(''),
+    photo: new FormControl('')
+  })
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  submit() : void {
+    console.log(this.playlistForm.value);
   }
 
 }
