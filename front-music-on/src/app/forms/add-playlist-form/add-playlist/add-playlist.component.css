@@ -2,10 +2,18 @@
   display: block;
 }
 
-.file-chooser-button {
-
-}
-
 .file-input {
   display: block;
+}
+
+.name-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  /* background: red; */
+}
+
+.name-area > div {
+  margin: 30px;
 }

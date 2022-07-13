@@ -19,7 +19,7 @@ export class AddPlaylistComponent implements OnInit {
   }
 
   submit() : void {
-    console.log(this.playlistForm.value);
+
   }
 
 }

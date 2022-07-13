@@ -1,0 +1,9 @@
+.playlist-image {
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.content-container {
+  margin: 0px 30px;
+}
