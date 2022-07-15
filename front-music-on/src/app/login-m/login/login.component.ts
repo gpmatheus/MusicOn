@@ -1,6 +1,8 @@
+import { AuthenticationService } from './../../services/authentication/authentication.service';
 import { FormGroup, FormControl } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { Action } from 'src/app/app.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -13,9 +15,18 @@ export class LoginComponent implements OnInit, Action {
     userName: new FormControl(''),
     password: new FormControl('')
   })
-
-  constructor() { }
   menuToggleEnabled: boolean = false;
+
+  constructor(private authenticationService : AuthenticationService, private router: Router) { }
+
+  authenticate() : void {
+    this.authenticationService.authenticate(this.loginForm.value.userName!, this.loginForm.value.password!)
+    .subscribe(v => {
+      if (v) {
+        this.router.navigateByUrl('/');
+      }
+    });
+  }
 
   toggleDrawer(): void {
   }

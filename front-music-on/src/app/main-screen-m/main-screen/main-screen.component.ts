@@ -1,3 +1,4 @@
+import { AuthenticationService } from './../../services/authentication/authentication.service';
 import { PlayableProviderService } from 'src/app/services/temp/playable-provider.service';
 import { Component, ElementRef, Input, OnInit, Output, ViewChild } from '@angular/core';
 import { Playlist } from 'src/app/services/temp/playable-provider.service';
@@ -14,8 +15,13 @@ export class MainScreenComponent implements OnInit, Action {
   @ViewChild('drawer') drawer!: MatDrawer;
   playlists: Playlist[] = []
 
-  constructor(playableProviderService: PlayableProviderService) {
+  // authenticationService: AuthenticationService é só pra testar
+
+  constructor(playableProviderService: PlayableProviderService, private authenticationService: AuthenticationService) {
     this.playlists = playableProviderService.getPlaylists();
+
+    // somente para testar
+    this.creator = authenticationService.isCreator();
   }
   menuToggleEnabled: boolean = true;
 
@@ -25,4 +31,8 @@ export class MainScreenComponent implements OnInit, Action {
 
   ngOnInit(): void {
   }
+
+
+  // somente para testar
+  creator: boolean;
 }

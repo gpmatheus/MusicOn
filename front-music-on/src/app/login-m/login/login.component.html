@@ -4,19 +4,23 @@
   </div>
   <div class="login-div">
     <div class="placement-div">
-      <form class="form" [formGroup]="loginForm">
+      <form class="form" (ngSubmit)="authenticate()" [formGroup]="loginForm">
         <div>
           <mat-form-field color="accent">
             <mat-label>User name</mat-label>
-            <input matInput type="text">
+            <input matInput type="text" formControlName="userName">
           </mat-form-field>
         </div>
 
         <div>
           <mat-form-field color="accent">
             <mat-label>Password</mat-label>
-            <input matInput type="password">
+            <input matInput type="password" formControlName="password">
           </mat-form-field>
+        </div>
+
+        <div class="button-container">
+          <button mat-button class="login-button" mat-raised-button type="submit">Login</button>
         </div>
 
       </form>

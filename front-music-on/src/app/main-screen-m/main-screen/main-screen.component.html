@@ -8,6 +8,8 @@
       <app-navigation-button icon="library_add" path="/add-playlist" textContent='Create new playlist'></app-navigation-button>
       <div class="spacer"></div>
       <app-navigation-button *ngFor="let playlist of playlists" [path]="['/playlist', playlist.id]" [textContent]="playlist.name"></app-navigation-button>
+      <mat-divider></mat-divider>
+      <p *ngIf="creator">É criador</p>
     </mat-nav-list>
   </mat-drawer>
   <router-outlet></router-outlet>
